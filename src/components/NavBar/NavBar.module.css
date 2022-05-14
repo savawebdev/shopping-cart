@@ -4,3 +4,10 @@
   height: 50px;
   width: 100%;
 }
+
+.navbar__links {
+  display: flex;
+  height: 100%;
+  margin-inline: auto;
+  max-width: 1000px;
+}
