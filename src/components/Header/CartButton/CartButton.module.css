@@ -1,5 +1,7 @@
 .cart-button {
   background: none;
   border: none;
+  color: var(--clr-coral);
   font-size: 1.1rem;
+  font-weight: bold;
 }
