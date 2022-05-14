@@ -2,6 +2,7 @@
   background: none;
   border: none;
   color: var(--clr-coral);
+  cursor: pointer;
   font-size: 1.1rem;
   font-weight: bold;
 }
