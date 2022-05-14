@@ -8,9 +8,16 @@ const ShowCart = ({ cart }) => {
       {cart.items.map((item) => (
         <div className={styles["cart-item"]}>
           <span>{item.name}</span>
-          <span>{item.quantity}</span>
+          <span>x{item.quantity}</span>
+          <span>{item.price * item.quantity} &euro;</span>
         </div>
       ))}
+
+      {cart.items.length !== 0 && (
+        <div className={styles["cart-total"]}>
+          {cart.items.reduce((sum, cur) => sum + cur.price * cur.quantity, 0)}
+        </div>
+      )}
     </div>
   );
 };
