@@ -1,0 +1,6 @@
+.navbar {
+  background-color: var(--clr-violet);
+  /* color: #d6fff6; */
+  height: 50px;
+  width: 100%;
+}
