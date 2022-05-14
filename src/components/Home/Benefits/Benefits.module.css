@@ -1,7 +1,9 @@
 .benefits {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+  height: 300px;
   margin-inline: auto;
   max-width: 1000px;
   padding-block: 40px;
