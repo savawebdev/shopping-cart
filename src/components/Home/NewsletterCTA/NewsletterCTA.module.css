@@ -1,5 +1,6 @@
 .newsletter-cta {
   background-color: var(--clr-coral);
+  border-radius: 10px;
   height: 300px;
   margin-inline: auto;
   max-width: 1000px;
@@ -7,6 +8,7 @@
 }
 
 .newsletter-cta > h2 {
+  color: var(--clr-blue);
   font-size: 1.8rem;
   font-weight: bold;
 }
