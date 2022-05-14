@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@400;700&display=swap");
 
 /* CUSTOM PROPERTIES */
+:root {
+  --clr-coral: #ff8484;
+}
 
 /* RESET CSS */
 @import "./Reset.css";
