@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
@@ -8,18 +7,16 @@ import Store from "./components/Pages/Store";
 
 const App = () => {
   return (
-    <Fragment>
+    <BrowserRouter>
       <Header />
       <NavBar />
       <main>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/store" element={<Store />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/store" element={<Store />} />
+        </Routes>
       </main>
-    </Fragment>
+    </BrowserRouter>
   );
 };
 
