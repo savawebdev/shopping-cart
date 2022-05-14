@@ -13,6 +13,10 @@
 @import "./Reset.css";
 
 /* MAIN STYLES */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

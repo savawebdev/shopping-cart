@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Benefits from "../Home/Benefits/Benefits";
+import NewsletterCTA from "../Home/NewsletterCTA/NewsletterCTA";
 import PromoBanner from "../Home/PromoBanner/PromoBanner";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <Fragment>
       <PromoBanner />
       <Benefits />
+      <NewsletterCTA />
     </Fragment>
   );
 };
