@@ -1,12 +1,16 @@
 import StoreGridCard from "../StoreGridCard/StoreGridCard";
 import styles from "./StoreGrid.module.css";
 
-const StoreGrid = () => {
+const StoreGrid = (props) => {
   return (
     <div className={styles["store-grid"]}>
-      <StoreGridCard />
-      <StoreGridCard />
-      <StoreGridCard />
+      {props.items.map((item) => (
+        <StoreGridCard
+          image={item.image}
+          description={item.description}
+          price={item.price}
+        />
+      ))}
     </div>
   );
 };
