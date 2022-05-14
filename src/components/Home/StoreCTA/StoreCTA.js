@@ -1,9 +1,10 @@
 import styles from "./StoreCTA.module.css";
+import { Link } from "react-router-dom";
 
 const StoreCTA = () => {
   return (
     <div className={styles["home-brand"]}>
-      <a href="/store>">Start shopping!</a>
+      <Link to="/store">Start Shopping!</Link>
     </div>
   );
 };

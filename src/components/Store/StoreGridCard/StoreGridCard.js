@@ -10,6 +10,8 @@ const StoreGridCard = () => {
         4.6GHz
       </p>
 
+      <span className={styles["store-grid__card-price"]}>1399.99</span>
+
       <button>Add to cart</button>
     </div>
   );
