@@ -23,7 +23,7 @@ const App = () => {
 
     {
       id: 2,
-      name: "ACER Nitro 5 AN515-45-R7YG,",
+      name: "ACER Nitro 5 AN515-45-R7YG",
       image: acerAN515Img,
       description:
         'Laptop Gaming ACER Nitro 5 AN515-45-R7YG, AMD Ryzen 5 5600H up to 4.2GHz, 15.6" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 4GB, Free DOS, black',
@@ -46,11 +46,28 @@ const App = () => {
 
   const addItemToCart = (id) => {
     const item = store.find((el) => el.id === id);
+    const cartItem = cart.items.find((el) => el.id === item.id);
 
-    setCart((prev) => ({
-      items: [...prev.items, item],
-      totalItems: prev.totalItems + 1,
-    }));
+    if (cartItem) {
+      cartItem.quantity++;
+
+      setCart((prev) => ({
+        items: [
+          ...prev.items.filter((item) => item.id !== cartItem.id),
+          cartItem,
+        ],
+        totalItems: prev.totalItems++,
+      }));
+    } else {
+      item.quantity = 1;
+
+      setCart((prev) => ({
+        items: [...prev.items, { ...item }],
+        totalItems: prev.totalItems++,
+      }));
+    }
+
+    console.log(cart);
   };
 
   return (
