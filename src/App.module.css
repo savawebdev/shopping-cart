@@ -1,0 +1,12 @@
+/* FONTS */
+
+/* CUSTOM PROPERTIES */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* RESET CSS */
+@import "./Reset.css";
+
+/* MAIN STYLES */
+body {
+  font-family: "Montserrat", sans-serif;
+}
