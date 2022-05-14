@@ -4,7 +4,7 @@ import StoreGrid from "../Store/StoreGrid/StoreGrid";
 const Store = (props) => {
   return (
     <Fragment>
-      <StoreGrid items={props.data} />
+      <StoreGrid items={props.data} addItemToCart={props.addItemToCart} />
     </Fragment>
   );
 };

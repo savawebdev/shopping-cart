@@ -16,7 +16,7 @@ const App = () => {
       id: 1,
       image: asusFX706Img,
       description:
-        'Laptop Gaming ASUS TUF F17 FX706HEB-HX114, Intel Core i7-11800H pana la 4.6GHz, 17.3" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 TI 4GB, Free DOS, negru',
+        'Laptop Gaming ASUS TUF F17 FX706HEB-HX114, Intel Core i7-11800H up to 4.6GHz, 17.3" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 TI 4GB, Free DOS, black',
       price: 1100,
     },
 
@@ -24,17 +24,31 @@ const App = () => {
       id: 2,
       image: acerAN515Img,
       description:
-        'Laptop Gaming ACER Nitro 5 AN515-45-R7YG, AMD Ryzen 5 5600H pana la 4.2GHz, 15.6" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 4GB, Free DOS, negru',
+        'Laptop Gaming ACER Nitro 5 AN515-45-R7YG, AMD Ryzen 5 5600H up to 4.2GHz, 15.6" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 4GB, Free DOS, black',
       price: 700,
     },
     {
       id: 3,
       image: aspireA515Img,
       description:
-        'Laptop ACER Aspire 5 A515-45-R5EP, AMD Ryzen 5 5500U pana la 4.0GHz, 15.6" Full, 8GB, SSD 512GB, AMD Radeon Graphics, Windows 10 Home, negru',
+        'Laptop ACER Aspire 5 A515-45-R5EP, AMD Ryzen 5 5500U up to 4.0GHz, 15.6" Full, 8GB, SSD 512GB, AMD Radeon Graphics, Windows 10 Home, black',
       price: 500,
     },
   ]);
+
+  const [cart, setCart] = useState({
+    items: [],
+    totalItems: 0,
+  });
+
+  const addItemToCart = (id) => {
+    const item = store.find((el) => el.id === id);
+
+    setCart((prev) => ({
+      ...prev,
+      items: [...prev.items, item],
+    }));
+  };
 
   return (
     <BrowserRouter>
@@ -43,7 +57,10 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store data={store} />} />
+          <Route
+            path="/store"
+            element={<Store data={store} addItemToCart={addItemToCart} />}
+          />
         </Routes>
       </main>
     </BrowserRouter>

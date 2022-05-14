@@ -5,11 +5,7 @@ const StoreGrid = (props) => {
   return (
     <div className={styles["store-grid"]}>
       {props.items.map((item) => (
-        <StoreGridCard
-          image={item.image}
-          description={item.description}
-          price={item.price}
-        />
+        <StoreGridCard item={item} addItemToCart={props.addItemToCart} />
       ))}
     </div>
   );
