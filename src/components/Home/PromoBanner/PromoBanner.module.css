@@ -1,5 +1,7 @@
 .promo-banner {
   background-color: var(--clr-coral);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex;
   height: 300px;
   justify-content: space-between;
@@ -20,5 +22,6 @@
 }
 
 .promo-banner__img {
+  border-bottom-right-radius: 20px;
   height: 100%;
 }
