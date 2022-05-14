@@ -2,11 +2,11 @@ import styles from "./Header.module.css";
 import Brand from "./Brand/Brand";
 import CartButton from "./CartButton/CartButton";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={styles.header}>
       <Brand />
-      <CartButton />
+      <CartButton cart={props.cart} />
     </header>
   );
 };

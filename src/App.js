@@ -45,14 +45,14 @@ const App = () => {
     const item = store.find((el) => el.id === id);
 
     setCart((prev) => ({
-      ...prev,
       items: [...prev.items, item],
+      totalItems: prev.totalItems + 1,
     }));
   };
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header cart={cart} />
       <NavBar />
       <main>
         <Routes>
