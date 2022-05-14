@@ -24,6 +24,7 @@
 ## Technologies Used
 
 - React 18.1.0
+- React Testing Library 13.2.0
 
 ## Features
 
