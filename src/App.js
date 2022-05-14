@@ -14,6 +14,7 @@ const App = () => {
   const [store, setStore] = useState([
     {
       id: 1,
+      name: "ASUS TUF F17 FX706HEB-HX114",
       image: asusFX706Img,
       description:
         'Laptop Gaming ASUS TUF F17 FX706HEB-HX114, Intel Core i7-11800H up to 4.6GHz, 17.3" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 TI 4GB, Free DOS, black',
@@ -22,6 +23,7 @@ const App = () => {
 
     {
       id: 2,
+      name: "ACER Nitro 5 AN515-45-R7YG,",
       image: acerAN515Img,
       description:
         'Laptop Gaming ACER Nitro 5 AN515-45-R7YG, AMD Ryzen 5 5600H up to 4.2GHz, 15.6" Full HD, 16GB, SSD 512GB, NVIDIA GeForce RTX 3050 4GB, Free DOS, black',
@@ -29,6 +31,7 @@ const App = () => {
     },
     {
       id: 3,
+      name: "ACER Aspire 5 A515-45-R5EP",
       image: aspireA515Img,
       description:
         'Laptop ACER Aspire 5 A515-45-R5EP, AMD Ryzen 5 5500U up to 4.0GHz, 15.6" Full, 8GB, SSD 512GB, AMD Radeon Graphics, Windows 10 Home, black',
