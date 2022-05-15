@@ -1,4 +1,4 @@
-# Project Name
+# Shopping Cart
 
 > A shopping cart built with React.
 > Live demo [_here_](https://www.example.com).
