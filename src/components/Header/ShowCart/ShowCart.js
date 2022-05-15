@@ -27,6 +27,15 @@ const ShowCart = ({ cart }) => {
           <span> {totalPrice} &euro;</span>
         </div>
       )}
+
+      <div className={styles.actions}>
+        <button className={`${styles["actions__btn"]} ${styles["go-to-cart"]}`}>
+          Go to cart
+        </button>
+        <button className={`${styles["actions__btn"]} ${styles["clear-cart"]}`}>
+          Clear cart
+        </button>
+      </div>
     </div>
   );
 };

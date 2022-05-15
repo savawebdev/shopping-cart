@@ -38,3 +38,24 @@
   color: var(--clr-blue);
   font-weight: bold;
 }
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.go-to-cart {
+  color: var(--clr-blue);
+}
+
+.clear-cart {
+  color: var(--clr-coral);
+}
