@@ -9,6 +9,7 @@ import Store from "./components/Pages/Store";
 import asusFX706Img from "./assets/images/asus-fx706heb.webp";
 import acerAN515Img from "./assets/images/acer-an515-45.jpg";
 import aspireA515Img from "./assets/images/Aspire5_A515-45_FP-negru-1-windows.webp";
+import Cart from "./components/Pages/Cart";
 
 const App = () => {
   const [store, setStore] = useState([
@@ -88,6 +89,7 @@ const App = () => {
             path="/store"
             element={<Store data={store} addItemToCart={addItemToCart} />}
           />
+          <Route path="/cart" element={<Cart data={cart} />} />
         </Routes>
       </main>
     </BrowserRouter>

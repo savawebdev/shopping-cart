@@ -1,6 +1,6 @@
 # Project Name
 
-> A shopping cart built with React
+> A shopping cart built with React.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -18,13 +18,15 @@
 ## General Information
 
 - Shopping cart project built for [The Oding Project](https://www.theodinproject.com/)
-- Used for practicing `react-router-dom`, hooks and React testing
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Used for practicing `react-router-dom` and hooks
+- There are 2 pages, a `Home` page acting as a landing page and a `Store` page
+- On the `Store` page you can browse through some items and add them to the cart
+- To see the cart just click on the button on the top-right
 
 ## Technologies Used
 
 - React 18.1.0
-- React Testing Library 13.2.0
+- react-router-dom 6.3.0
 
 ## Features
 

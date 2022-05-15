@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./ShowCart.module.css";
 
 const ShowCart = ({ cart, clearCart }) => {
@@ -30,11 +31,14 @@ const ShowCart = ({ cart, clearCart }) => {
           </div>
 
           <div className={styles.actions}>
-            <button
-              className={`${styles["actions__btn"]} ${styles["go-to-cart"]}`}
-            >
-              Go to cart
-            </button>
+            <Link to="/cart">
+              <button
+                className={`${styles["actions__btn"]} ${styles["go-to-cart"]}`}
+              >
+                Go to cart
+              </button>
+            </Link>
+
             <button
               className={`${styles["actions__btn"]} ${styles["clear-cart"]}`}
               onClick={clearCart}
