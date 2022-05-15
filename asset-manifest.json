@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.66fac1ff.css",
+    "main.js": "/shopping-cart/static/js/main.44b09d2c.js",
+    "static/media/promo-banner.jpg": "/shopping-cart/static/media/promo-banner.6daecc0f9debebf77980.jpg",
+    "static/media/acer-an515-45.jpg": "/shopping-cart/static/media/acer-an515-45.49e89961f25d10cc4856.jpg",
+    "static/media/asus-fx706heb.webp": "/shopping-cart/static/media/asus-fx706heb.2f440d7fd2c89d16be00.webp",
+    "static/media/Aspire5_A515-45_FP-negru-1-windows.webp": "/shopping-cart/static/media/Aspire5_A515-45_FP-negru-1-windows.85572b7ec66b018bfc42.webp",
+    "index.html": "/shopping-cart/index.html",
+    "main.66fac1ff.css.map": "/shopping-cart/static/css/main.66fac1ff.css.map",
+    "main.44b09d2c.js.map": "/shopping-cart/static/js/main.44b09d2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66fac1ff.css",
+    "static/js/main.44b09d2c.js"
+  ]
+}
