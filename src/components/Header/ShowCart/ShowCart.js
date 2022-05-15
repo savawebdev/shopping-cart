@@ -1,10 +1,11 @@
 import styles from "./ShowCart.module.css";
 
-const ShowCart = ({ cart }) => {
+const ShowCart = ({ cart, clearCart }) => {
   const totalPrice = cart.items.reduce(
     (sum, cur) => sum + cur.price * cur.quantity,
     0
   );
+
   return (
     <div className={styles["show-cart"]}>
       {cart.items.length === 0 && <span>There are no items in the cart.</span>}
@@ -22,20 +23,27 @@ const ShowCart = ({ cart }) => {
       ))}
 
       {cart.items.length !== 0 && (
-        <div className={styles["cart-total"]}>
-          Total Price:
-          <span> {totalPrice} &euro;</span>
-        </div>
-      )}
+        <>
+          <div className={styles["cart-total"]}>
+            Total Price:
+            <span> {totalPrice} &euro;</span>
+          </div>
 
-      <div className={styles.actions}>
-        <button className={`${styles["actions__btn"]} ${styles["go-to-cart"]}`}>
-          Go to cart
-        </button>
-        <button className={`${styles["actions__btn"]} ${styles["clear-cart"]}`}>
-          Clear cart
-        </button>
-      </div>
+          <div className={styles.actions}>
+            <button
+              className={`${styles["actions__btn"]} ${styles["go-to-cart"]}`}
+            >
+              Go to cart
+            </button>
+            <button
+              className={`${styles["actions__btn"]} ${styles["clear-cart"]}`}
+              onClick={clearCart}
+            >
+              Clear cart
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 };

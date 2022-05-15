@@ -15,7 +15,7 @@ const Header = (props) => {
     <header className={styles.header}>
       <Brand />
       <CartButton cart={props.cart} clickHandler={handleShowCart} />
-      {showCart && <ShowCart cart={props.cart} />}
+      {showCart && <ShowCart cart={props.cart} clearCart={props.clearCart} />}
     </header>
   );
 };

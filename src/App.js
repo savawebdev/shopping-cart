@@ -70,9 +70,16 @@ const App = () => {
     console.log(cart);
   };
 
+  const clearCart = () => {
+    setCart({
+      items: [],
+      totalItems: 0,
+    });
+  };
+
   return (
     <BrowserRouter>
-      <Header cart={cart} />
+      <Header cart={cart} clearCart={clearCart} />
       <NavBar />
       <main>
         <Routes>
