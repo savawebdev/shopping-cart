@@ -1,7 +1,7 @@
 # Shopping Cart
 
 > A shopping cart built with React.
-> Live demo [_here_](https://www.example.com).
+> Live demo [_here_](https://savawebdev.github.io/shopping-cart/).
 
 ## Table of Contents
 
