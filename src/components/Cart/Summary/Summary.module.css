@@ -1,0 +1,35 @@
+.summary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.summary__price {
+  font-size: 1.5rem;
+}
+
+.summary__price > span {
+  color: var(--clr-blue);
+  font-weight: bold;
+}
+
+.summary__btn {
+  background-color: var(--clr-coral);
+  border: none;
+  border-radius: 10px;
+  color: var(--clr-blue);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 40px;
+  transition: all 0.4s ease;
+  width: 150px;
+}
+
+.summary__btn:hover {
+  background-color: var(--clr-blue);
+  color: var(--clr-coral);
+}

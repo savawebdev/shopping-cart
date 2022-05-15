@@ -1,4 +1,5 @@
 import CartCard from "../Cart/CartCard/CartCard";
+import Summary from "../Cart/Summary/Summary";
 
 const Cart = ({ data, removeItemFromCart, manageQuantity }) => {
   return (
@@ -11,6 +12,8 @@ const Cart = ({ data, removeItemFromCart, manageQuantity }) => {
           manageQuantity={manageQuantity}
         />
       ))}
+
+      <Summary cart={data} />
     </>
   );
 };

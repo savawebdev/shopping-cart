@@ -92,7 +92,7 @@ const App = () => {
     let newTotalItems = cart.totalItems;
 
     if (operation === "-") {
-      if (item.quantity === 0) {
+      if (item.quantity === 1) {
         return;
       }
 
