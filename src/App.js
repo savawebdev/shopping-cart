@@ -23,7 +23,7 @@ const App = () => {
     },
 
     {
-      id: 2,
+      id: 3,
       name: "ACER Nitro 5 AN515-45-R7YG",
       image: acerAN515Img,
       description:
@@ -31,7 +31,7 @@ const App = () => {
       price: 700,
     },
     {
-      id: 3,
+      id: 2,
       name: "ACER Aspire 5 A515-45-R5EP",
       image: aspireA515Img,
       description:
@@ -103,8 +103,10 @@ const App = () => {
       newTotalItems++;
     }
 
+    const newItems = cart.items.map((el) => (el.id === item.id ? item : el));
+
     setCart((prev) => ({
-      items: [...prev.items.filter((el) => el.id !== item.id), item],
+      items: newItems,
       totalItems: newTotalItems,
     }));
   };
