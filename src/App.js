@@ -87,6 +87,28 @@ const App = () => {
     }));
   };
 
+  const manageQuantity = (id, operation) => {
+    const item = cart.items.find((el) => el.id === id);
+    let newTotalItems = cart.totalItems;
+
+    if (operation === "-") {
+      if (item.quantity === 0) {
+        return;
+      }
+
+      item.quantity--;
+      newTotalItems--;
+    } else if (operation === "+") {
+      item.quantity++;
+      newTotalItems++;
+    }
+
+    setCart((prev) => ({
+      items: [...prev.items.filter((el) => el.id !== item.id), item],
+      totalItems: newTotalItems,
+    }));
+  };
+
   return (
     <BrowserRouter>
       <Header cart={cart} clearCart={clearCart} />
@@ -101,7 +123,11 @@ const App = () => {
           <Route
             path="/cart"
             element={
-              <Cart data={cart} removeItemFromCart={removeItemFromCart} />
+              <Cart
+                data={cart}
+                removeItemFromCart={removeItemFromCart}
+                manageQuantity={manageQuantity}
+              />
             }
           />
         </Routes>

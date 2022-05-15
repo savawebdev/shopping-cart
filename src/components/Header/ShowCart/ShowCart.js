@@ -12,7 +12,7 @@ const ShowCart = ({ cart, clearCart }) => {
       {cart.items.length === 0 && <span>There are no items in the cart.</span>}
 
       {cart.items.map((item) => (
-        <div className={styles["cart-item"]}>
+        <div key={item.id} className={styles["cart-item"]}>
           <span className={styles["cart-item__name"]}>{item.name}</span>
           <span className={styles["cart-item__quantity"]}>
             x{item.quantity}
