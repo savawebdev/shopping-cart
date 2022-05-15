@@ -1,7 +1,7 @@
 # Project Name
 
 > A shopping cart built with React.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://www.example.com).
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@
 - [Room for Improvement](#room-for-improvement)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
-<!-- * [License](#license) -->
 
 ## General Information
 
@@ -22,6 +21,7 @@
 - There are 2 pages, a `Home` page acting as a landing page and a `Store` page
 - On the `Store` page you can browse through some items and add them to the cart
 - To see the cart just click on the button on the top-right
+- A link to the `Cart` page is present in the cart modal
 
 ## Technologies Used
 
@@ -49,3 +49,5 @@ _work in progress_
 - https://unsplash.com/photos/WiONHd_zYI4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 ## Contact
+
+Contact me through [e-mail](andrei.sava.dev@gmail.com).
