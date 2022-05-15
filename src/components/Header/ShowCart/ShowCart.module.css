@@ -1,9 +1,40 @@
 .show-cart {
   background: #fff;
   border: 1px solid var(--clr-coral);
+  font-size: 0.9rem;
   padding: 20px;
   position: absolute;
   top: 70px;
   right: 0;
   width: 500px;
+}
+
+.cart-item {
+  border-bottom: 1px solid var(--clr-cyan);
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5px;
+}
+
+.cart-item__name {
+  color: var(--clr-coral);
+}
+
+.cart-item__quantity {
+  font-weight: bold;
+}
+
+.cart-item__price {
+  color: var(--clr-blue);
+  font-weight: bold;
+}
+
+.cart-total {
+  font-size: 1.1rem;
+  margin-block: 5px;
+}
+
+.cart-total > span {
+  color: var(--clr-blue);
+  font-weight: bold;
 }
