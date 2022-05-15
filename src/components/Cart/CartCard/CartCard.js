@@ -1,6 +1,9 @@
 import styles from "./CartCard.module.css";
 
-const CartCard = ({ item }) => {
+const CartCard = ({ item, removeItemFromCart }) => {
+  const removeItemHandler = () => {
+    removeItemFromCart(item.id);
+  };
   return (
     <div className={styles["cart-card"]}>
       <img src={item.image} alt="" />
@@ -18,7 +21,10 @@ const CartCard = ({ item }) => {
           {item.price * item.quantity} &euro;
         </span>
 
-        <button className={styles["cart-card__remove-btn"]}>
+        <button
+          className={styles["cart-card__remove-btn"]}
+          onClick={removeItemHandler}
+        >
           Remove item from cart
         </button>
       </div>

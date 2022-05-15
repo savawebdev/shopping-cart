@@ -78,6 +78,15 @@ const App = () => {
     });
   };
 
+  const removeItemFromCart = (id) => {
+    const item = cart.items.find((el) => el.id === id);
+
+    setCart((prev) => ({
+      items: prev.items.filter((el) => el.id !== id),
+      totalItems: prev.totalItems - item.quantity,
+    }));
+  };
+
   return (
     <BrowserRouter>
       <Header cart={cart} clearCart={clearCart} />
@@ -89,7 +98,12 @@ const App = () => {
             path="/store"
             element={<Store data={store} addItemToCart={addItemToCart} />}
           />
-          <Route path="/cart" element={<Cart data={cart} />} />
+          <Route
+            path="/cart"
+            element={
+              <Cart data={cart} removeItemFromCart={removeItemFromCart} />
+            }
+          />
         </Routes>
       </main>
     </BrowserRouter>
