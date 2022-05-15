@@ -57,18 +57,16 @@ const App = () => {
           ...prev.items.filter((item) => item.id !== cartItem.id),
           cartItem,
         ],
-        totalItems: prev.totalItems++,
+        totalItems: prev.totalItems + 1,
       }));
     } else {
       item.quantity = 1;
 
       setCart((prev) => ({
         items: [...prev.items, { ...item }],
-        totalItems: prev.totalItems++,
+        totalItems: prev.totalItems + 1,
       }));
     }
-
-    console.log(cart);
   };
 
   const clearCart = () => {
